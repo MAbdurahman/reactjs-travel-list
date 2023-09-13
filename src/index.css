@@ -1,10 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@500;700&display=swap");
 
-* {
+/* =========================================
+              Website Resets
+============================================ */
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
+
+*::-moz-focus-inner {
+  border: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+/*=============================================
+          root, html, and body styles
+================================================*/
 
 html {
   font-size: 62.5%;
@@ -12,9 +34,9 @@ html {
 
 body {
   font-size: 2.4rem;
-  font-family: sans-serif;
+  
   color: #5a3e2b;
-  font-family: "Quicksand";
+  font-family: "Quicksand", sans-serif;
   font-weight: 500;
 }
 
@@ -26,9 +48,10 @@ body {
 }
 
 h1 {
+  margin-top: 0;
   text-align: center;
   background-color: #f4a226;
-  font-family: "Monoton";
+  font-family: "Monoton", cursive;
   font-size: 8rem;
   text-transform: uppercase;
   font-weight: 400;
@@ -129,4 +152,43 @@ input[type="checkbox"] {
   text-align: center;
   font-weight: 700;
   padding: 3.2rem 0;
+}
+
+
+/* Large Devices (Desktops & Laptops) */
+@media (min-width: 1200px) and (max-width: 1299px) {
+
+}
+
+
+/* Medium Devices (Landscape Tablets & Medium Desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+
+/* Small Devices (Portrait Tablets & Small Desktops) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+
+/* Extra Small Devices (Landscape Phones & Portrait Tablets) */
+@media (max-width: 767px) {
+
+}
+
+
+/* Extra Small Devices (Portrait Phones & Smaller Devices) */
+@media (max-width: 480px) {
+  .message {
+    font-size: 12px;
+  }
+
+}
+
+
+/* Extra Small Devices (Portrait Phones & Smaller Devices) */
+@media (max-width: 320px) {
+
 }
