@@ -48,7 +48,7 @@ body {
 }
 
 h1 {
-  margin-top: 0;
+  margin: 0;
   text-align: center;
   background-color: #f4a226;
   font-family: "Monoton", cursive;
@@ -147,7 +147,7 @@ input[type="checkbox"] {
   transform: translateY(2px);
 }
 
-.stats {
+.footer {
   background-color: #76c7ad;
   text-align: center;
   font-weight: 700;
