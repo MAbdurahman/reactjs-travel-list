@@ -28,7 +28,7 @@ export default function App() {
       <Header />
       <Form onAddItems={handleAddItems} />
       <PackingList items={items} onDeleteItem={handleDeleteItem} onToggleItem={handleToggleItem} />
-      <Footer />
+      <Footer items={items} />
     </div>
   );
 }
