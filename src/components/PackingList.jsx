@@ -1,18 +1,14 @@
-import React from 'react';
-import {initialItems} from "../initialItems";
+import React from "react";
 import PackingItem from "./PackingItem";
 
-export default function PackingList() {
-
-    return (
-        <div className="list">
-            <ul>
-                {initialItems.map(item => <PackingItem key={item.id} item={item}/>)}
-            </ul>
-
-        </div>
-
-    );
-};
-
-
+export default function PackingList({ items, onDeleteItem, onToggleItem }) {
+  return (
+    <div className="list">
+      <ul>
+        {items.map((item) => (
+          <PackingItem key={item.id} item={item} onDeleteItem={onDeleteItem} onToggleItem={onToggleItem}/>
+        ))}
+      </ul>
+    </div>
+  );
+}

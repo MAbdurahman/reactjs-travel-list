@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import swal from 'sweetalert';
+import swal from "sweetalert";
 
-export default function Form() {
+export default function Form({ onAddItems }) {
   const [description, setDescription] = useState("");
   const [quantity, setQuantity] = useState(1);
 
@@ -9,11 +9,11 @@ export default function Form() {
     e.preventDefault();
 
     if (!description) {
-        swal("Invalid Description!", "Must be a valid description", "error");
-        return;
+      swal("Invalid Description!", "Must be a valid description", "error");
+      return;
     }
     const newItem = { description, quantity, packed: false, id: Date.now() };
-      console.log(newItem);
+    onAddItems(newItem);
 
     setDescription("");
     setQuantity(1);

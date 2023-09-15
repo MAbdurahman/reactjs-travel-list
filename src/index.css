@@ -106,6 +106,29 @@ input {
   background-color: #76c7ad;
 }
 
+/*=============================================
+          sweetalert buttons
+================================================*/
+.swal-button {
+  background-color: #111111;
+  background-color: #76c7ad;
+  color: #111111;
+  border: none;
+  border-radius: 10rem;
+}
+
+.swal-button:not([disabled]):hover {
+  background: #76c7ad radial-gradient(circle, transparent 1%, #76c7ad 1%) center/15000%;
+  outline: none !important;
+}
+
+.swal-button--cancel {
+  color: #d9d9d9;
+  background-color: #111111;
+  border: none;
+  border-radius: 10rem;
+}
+
 .list {
   background-color: #5a3e2b;
   color: #ffebb3;
