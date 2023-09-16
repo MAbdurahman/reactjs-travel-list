@@ -124,9 +124,13 @@ input {
 
 .swal-button--cancel {
   color: #d9d9d9;
-  background-color: #111111;
+  background-color: #5a3e2b;
   border: none;
   border-radius: 10rem;
+}
+
+.swal-button--cancel:hover {
+  background-color: #7c553c radial-gradient(circle, transparent 1%, #7c553c 1%) center/15000% !important;
 }
 
 .list {

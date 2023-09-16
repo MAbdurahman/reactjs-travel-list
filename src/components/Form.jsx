@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import swal from "sweetalert";
 
 export default function Form({ onAddItems }) {
+    //**************** variables ****************//
   const [description, setDescription] = useState("");
   const [quantity, setQuantity] = useState(1);
 
+    //**************** functions ****************//
   function handleSubmit(e) {
     e.preventDefault();
 
